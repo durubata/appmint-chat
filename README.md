@@ -1,4 +1,4 @@
-# React Chat Client
+# Appmint Chat Client
 
 A flexible and easy-to-use chat client for React applications, designed to work with any Socket.IO-compatible backend.
 
@@ -42,11 +42,11 @@ Here's a basic example of how to use the React Chat Client in your application:
 
 ```jsx
 import React from 'react';
-import { ChatClient } from 'react-chat-client';
+import { AppmintChatClient } from '@appmint/chat';
 
 const App = () => {
   return (
-    <ChatClient
+    <AppmintChatClient
       socketUrl="https://your-socket-server.com"
       userId="user123"
       username="John Doe"
@@ -70,7 +70,7 @@ The ChatClient component accepts the following props:
 
 ## API Reference
 
-### ChatClient
+### Appmint Chat Client
 
 The main component that renders the chat interface.
 
@@ -88,10 +88,10 @@ Props:
 A custom hook for integrating chat functionality into your own components.
 
 ```jsx
-import { useChat } from 'react-chat-client';
+import { useChat } from '@appmint/chat';
 
 const MyComponent = () => {
-  const { messages, sendMessage, isTyping } = useChat({
+  const { messages, sendMessage, isTyping } = useAppmintChat({
     socketUrl: 'https://your-socket-server.com',
     userId: 'user123',
     username: 'John Doe',
